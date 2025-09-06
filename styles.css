@@ -1,0 +1,146 @@
+/* Global Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: #f9f9f9;
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 960px;
+  margin: auto;
+  padding: 20px;
+}
+
+header {
+  background: #004aad;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+nav {
+  background: #222;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  margin: 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.hero {
+  background: #e0f0ff;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.hero h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.hero .btn {
+  background: #004aad;
+  color: white;
+  padding: 10px 20px;
+  display: inline-block;
+  margin-top: 15px;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+/* Sections */
+section {
+  margin: 40px 0;
+}
+
+.skills-list,
+.projects-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.projects-list li {
+  margin-bottom: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.contact-form button {
+  background: #004aad;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  background: #222;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+footer .social-links a {
+  margin: 0 10px;
+  color: #4dcfff;
+  text-decoration: none;
+}
+
+/* Scroll to top button */
+#scrollTopBtn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  display: none;
+  background-color: #004aad;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 18px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero h2 {
+    font-size: 1.5em;
+  }
+
+  .container {
+    padding: 10px;
+  }
+}
